@@ -1,5 +1,6 @@
 import React from 'react'
 import {useQuery} from 'react-query'
+import PlanentCard from './PlanetCard'
 
 
   // fetch data
@@ -17,7 +18,18 @@ import {useQuery} from 'react-query'
   return (
    
      <div>
-    {status}
+    <h2>Planet</h2>
+    {status === 'loading' &&(
+    <span>Loading data....</span>
+    )}
+    {status === 'error' &&(
+    <span>Error fetching data!</span>
+    )}
+    {status === 'success' &&(
+    <div>
+    {data.results.map(items => <PlanentCard key={items.name} items={items} />)}
+    </div>
+    )}
      </div>
   )
 }

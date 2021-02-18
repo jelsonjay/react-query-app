@@ -35,3 +35,21 @@ button:hover {
 .content {
 	text-align: left;
 }
+
+.planet-card {
+	padding: 8 16px;
+	background: #000;
+	margin: 16px 0;
+	border-radius: 10px;
+}
+.planet-card p {
+	margin: 10px;
+	color: #fff;
+	font-size: 1rem;
+}
+.planet-card h3 {
+	margin: 10px 0;
+	color: salmon;
+	margin: 10px;
+	font-size: 2rem;
+}
