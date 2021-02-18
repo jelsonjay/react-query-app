@@ -12,7 +12,7 @@ import PlanentCard from './PlanetCard'
 
  function Planent() {
 
-  const {data, status} = useQuery('planets', fetchData)
+  const {data, status} = useQuery(['planets'], fetchData)
   console.log(data)
 
   return (
