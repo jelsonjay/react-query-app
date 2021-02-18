@@ -4,7 +4,7 @@ import React from 'react'
 
   return (
     <div>
-      <button onClick={() => setItems('person')}>Person</button>
+      <button onClick={() => setItems('person')}>Persons</button>
       <button onClick={() => setItems('planets')}>Planets</button>
     </div>
   )

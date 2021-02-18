@@ -1,19 +1,20 @@
-import Reacr, {useState} from 'react'
+import React, {useState} from 'react'
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Planets from './components/Planet';
-import Person from './components/';
+import Person from './components/Person';
 
 function App() {
 const [item, setItems] = useState('planets')
 
   return (
-    <div className="App">
-   <h1>Hello World!</h1>
+  <div className="App">
+   <h1>Star Wars API's Info</h1>
    <Navbar setItems={setItems}/>
-   <di className='content'>
+   <div className='content'>
   {item === 'planets' ? <Planets /> : <Person />}
-   </di>
+   </div>
     </div>
   );
 }

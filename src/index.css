@@ -7,16 +7,31 @@ body {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 	background: #f2f2f2;
-	color: #ddd;
+	color: #000;
 	text-align: center;
 	line-height: 2;
 }
 
 h1 {
 	color: coral;
-	font-size: 5rem;
+	font-size: 6rem;
+	font-weight: bold;
 }
 button {
 	margin: 0 10px;
 	background: transparent;
+	border: 2px solid salmon;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+}
+button:hover {
+	border-color: #ddd;
+	color: salmon;
+}
+
+.content {
+	text-align: left;
 }
